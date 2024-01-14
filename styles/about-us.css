@@ -1,0 +1,13 @@
+.container {
+  height: 100vh;
+  background-color: #fcd703;
+  width: 100%;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.our-story {
+  width: 40vw;
+}

@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "electrical", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+.landing-page {
+  background: #fcd703;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  padding-left: 110px;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  position: relative;
+}
+.nav-bar {
+  background-color: #fcd703;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.landing-page h1 {
+  font-size: 40px;
+  color: #000000;
+}
+.inner-text-box {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.lemon img {
+  width: 50vw;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(-10deg);
+  object-fit: contain;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  font-weight: bold;
+  /* margin-right: 70px; */
+}
+.topnav {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 100%;
+}
+.topnav a {
+  margin-right: 70px;
+}
+.check-products-btn {
+  background-color: #ed1d24;
+  width: 10vw;
+  border: 5px solid #040707;
+  color: #ffff;
+  font-family: "electrical", sans-serif;
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 40px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: #ffff;
+}
+.check-products-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fcd703;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease-in-out;
+  z-index: -1;
+}
+
+.check-products-btn:hover::after {
+  transform: scaleX(1);
+  color: #fff;
+}
+
+.check-products-btn:hover {
+  color: #000000;
+  z-index: 1;
+}
+.inner-text-box p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.products-page {
+  height: 100vh;
+  background-color: #ed1d24;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -140px;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  display: flex;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.products-page h1 {
+  font-size: 40px;
+  color: #000000;
+}
+.products a {
+  display: flex;
+  flex-direction: column; /* align children in a column */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  background-color: #fcd703;
+  display: flex;
+  width: 100%;
+  padding: calc(40vh - 20px) 10% 10% 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.column {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 1;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+  left: 127px;
+  top: 2px;
+}
+
+.border {
+  border-radius: 100px;
+}
+
+.email {
+  width: 210px;
+  height: 30px;
+}
+
+.spacer {
+  margin: 5px;
+}
+
+.button {
+  height: 26px;
+  width: 80px;
+  background-color: #fcd703;
+}
+.icons a {
+  margin-right: 20px;
+}
