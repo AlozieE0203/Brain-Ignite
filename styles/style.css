@@ -21,6 +21,9 @@ html {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
   position: relative;
 }
+.hamburger-menu {
+  display: none;
+}
 .nav-bar {
   background-color: #fcd703;
   padding-left: 10px;
@@ -68,6 +71,7 @@ a {
 .topnav a {
   margin-right: 70px;
 }
+
 .check-products-btn {
   background-color: #ed1d24;
   width: 10vw;
@@ -202,4 +206,261 @@ footer {
 }
 .icons a {
   margin-right: 20px;
+}
+@media only screen and (max-width: 750px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "electrical", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .products-page {
+    clip-path: none; /* Remove clip-path for mobile */
+    margin-top: 0; /* Adjust margin-top as needed */
+    width: 100%;
+    display: flex;
+    justify-self: center;
+  }
+  .products {
+    display: flex;
+    flex-direction: column; /* align children in a column */
+  }
+
+  .soda-1,
+  .soda-2,
+  .soda-3,
+  .soda-4 {
+    width: auto; /* Reset width for larger screens */
+    margin-bottom: 50px; /* Remove margin on larger screens */
+  }
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0; /* Remove padding-left */
+    clip-path: none; /* Remove clip-path */
+  }
+  .landing-page h1 {
+    font-size: 30px;
+    color: #000000;
+  }
+  .lemon img {
+    display: none; /* Hide image */
+  }
+  .nav-bar {
+    padding-left: 0; /* Remove padding-left */
+  }
+  .check-products-btn {
+    width: 50%; /* Make the button full width */
+  }
+  .inner-text-box {
+    padding-left: 20px; /* Add padding to inner-text-box */
+    padding-right: 20px; /* Add padding to inner-text-box */
+  }
+  .email {
+    width: 100%; /* Make the email input full width */
+  }
+  .spacer {
+    margin: 10px 0; /* Adjust margin for spacers */
+  }
+  .column {
+    margin: 10px 0; /* Adjust margin for columns */
+  }
+  .products-page {
+    padding-top: 50px; /* Adjust padding-top for products-page */
+    height: 100%; /* Make products-page full height */
+  }
+  .products-page h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .icons a {
+    margin-right: 10px; /* Adjust margin for icons */
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #contact input {
+    width: 40%;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fcd703;
+  }
+  .logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+  }
+  .hide-menu {
+    display: none;
+  }
+  .topnav {
+    display: none;
+  }
+  @media only screen and (max-width: 750px) {
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "electrical", sans-serif;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    .products-page {
+      clip-path: none; /* Remove clip-path for mobile */
+      margin-top: 0; /* Adjust margin-top as needed */
+      width: 100%;
+      display: flex;
+      justify-self: center;
+    }
+    .products {
+      display: flex;
+      flex-direction: column; /* align children in a column */
+    }
+
+    .soda-1,
+    .soda-2,
+    .soda-3,
+    .soda-4 {
+      width: auto; /* Reset width for larger screens */
+      margin-bottom: 50px; /* Remove margin on larger screens */
+    }
+    .landing-page {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-left: 0; /* Remove padding-left */
+      clip-path: none; /* Remove clip-path */
+    }
+    .landing-page h1 {
+      font-size: 30px;
+      color: #000000;
+    }
+    .lemon img {
+      display: none; /* Hide image */
+    }
+    .nav-bar {
+      padding-left: 0; /* Remove padding-left */
+    }
+    .check-products-btn {
+      width: 50%; /* Make the button full width */
+    }
+    .inner-text-box {
+      padding-left: 20px; /* Add padding to inner-text-box */
+      padding-right: 20px; /* Add padding to inner-text-box */
+    }
+    .email {
+      width: 100%; /* Make the email input full width */
+    }
+    .spacer {
+      margin: 10px 0; /* Adjust margin for spacers */
+    }
+    .column {
+      margin: 10px 0; /* Adjust margin for columns */
+    }
+    .products-page {
+      padding-top: 50px; /* Adjust padding-top for products-page */
+      height: 100%; /* Make products-page full height */
+    }
+    .products-page h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+    .icons a {
+      margin-right: 10px; /* Adjust margin for icons */
+    }
+
+    .nav-bar {
+      display: none;
+    }
+    .hamburger-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #fcd703;
+    }
+    .logo img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+    .bar {
+      width: 30px;
+      height: 3px;
+      background-color: #000;
+      margin: 6px 0;
+    }
+    .hide-menu {
+      display: none;
+    }
+    .topnav {
+      display: none;
+    }
+    .menu-items {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: #fcd703;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 2; /* Ensure it's above other elements */
+      /* visibility: hidden; */
+    }
+    .menu-items.visible {
+      display: flex;
+    }
+    .menu-items a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 24px; /* Adjust the font size as needed */
+      margin-bottom: 20px; /* Adjust the spacing between links */
+    }
+    .bar {
+      width: 30px;
+      height: 3px;
+      background-color: #000;
+      margin: 6px 0;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .menu-items .menu-icon {
+      cursor: pointer;
+    }
+    /* New styles for the cross icon */
+    .menu-items .menu-icon .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .menu-items .menu-icon .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-items .menu-icon .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
 }

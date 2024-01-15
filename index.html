@@ -12,6 +12,28 @@
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
+    <div class="hamburger-menu">
+      <div class="logo">
+        <a href="#landing-page">
+          <img src="/assets/BrainIgnite-logo.png" alt="Brain Ignite Logo" />
+        </a>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <a href="/pages/about-us.html" onclick="toggleMenu()">About</a>
+        <a href="index.html#products-page" onclick="toggleMenu()">Products</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+      </div>
+    </div>
     <div class="container">
       <div class="nav-bar">
         <a href="#landing-page">
@@ -23,7 +45,7 @@
           />
         </a>
         <div class="topnav">
-          <a href="#news">About Us</a>
+          <a href="about-us.html">About Us</a>
           <a href="#products">Products</a>
           <a href="#contact">Contact</a>
         </div>
@@ -42,25 +64,25 @@
         <h1>Our Products</h1>
         <div class="products">
           <div class="soda-1">
-            <a href="lemon.html">
+            <a href="/pages/lemon.html">
               <img src="/assets/lemon.png" alt="Soda Can 1" />
               <p>Lemon</p>
             </a>
           </div>
           <div class="soda-2">
-            <a href="cherry.html">
+            <a href="/pages/cherry.html">
               <img src="/assets/cherry.png" alt="Soda Can 2" />
               <p>Cherry</p>
             </a>
           </div>
           <div class="soda-3">
-            <a href="cola.html">
+            <a href="/pages/cola.html">
               <img src="/assets/cola.png" alt="Soda Can 3" />
               <p>Cola</p>
             </a>
           </div>
           <div class="soda-4">
-            <a href="orange.html">
+            <a href="/pages/orange.html">
               <img src="/assets/orange.png" alt="Soda Can 4" />
               <p>Orange</p>
             </a>

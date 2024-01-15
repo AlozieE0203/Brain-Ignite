@@ -9,3 +9,10 @@ document.querySelector('a[href="#products"]').addEventListener('click', function
     event.preventDefault();
     document.getElementById('products-page').scrollIntoView({ behavior: 'smooth' });
 });
+function toggleMenu() {
+    var menuIcon = document.querySelector('.menu-icon');
+    var menuItems = document.querySelector('.menu-items');
+
+    menuItems.classList.toggle('visible');
+    menuIcon.classList.toggle('open'); // Toggle the 'open' class on the menu icon
+}
